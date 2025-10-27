@@ -212,7 +212,7 @@
   <body>
     <div class="container">
     <div class="card">
-    <h1>🎡 ROLETA VILA FERRAMENTAS</h1>
+    <h1>🎡 ROLETA VILA FERRAMENTAS 🎡</h1>
     <div class="wheel-wrap" id="wrap">
     <div class="frame"></div>
     <div class="inner"></div>
@@ -417,8 +417,10 @@
     winToast.style.display = 'inline-block';
     } else {
     playAudio(S.lose, 0.4);
-    setTimeout(resetGame, 2000);
     }
+
+    // Reiniciar automaticamente após 3 segundos
+    setTimeout(resetGame, 3000);
     }, 4000);
     }
 
